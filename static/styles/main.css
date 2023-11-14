@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.button {
+    background-color: transparent;
+    appearance: none;
+    font-size: 4vw;
+    padding: 2vw 5vw;
+    color: white;
+    font-weight: 900;
+    border: 2px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity 0.25s ease;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.button-start-game {
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heads-up-display {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.heads-up-display__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.heads-up-display__icon {
+    width: 5vw;
+}
+
+.heads-up-display__text {
+    font-size: 4vw;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-indicator {
+    position: relative;
+    background-color: rgba(1,1,1,0.5);
+    width: 30vw;
+    padding: 0.25rem;
+}
+
+.progress-indicator__text {
+    position: relative;
+    font-size: 3vw;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-indicator__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0,125,255,0.8);
+}
+
+.end-level-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgba(1,1,1,0.8);
+}
+
+.end-level-overlay__title {
+    margin: 0;
+    color: white;
+    font-size: 5vw;;
+}
+
+.end-level-overlay__crystal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.end-level-overlay__crystal-icon {
+    width: 8vw;
+}
+
+.end-level-overlay__crystal-count {
+    width: 8vw;
+    color: white;
+    font-size: 8vw;;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.end-level-overlay__status {
+    color: white;
+    font-size: 3vw;
+}
+
+.joystick-zone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.text-color-danger {
+    color: red;
+}
