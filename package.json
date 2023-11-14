@@ -23,7 +23,7 @@
         "dev": "webpack serve --config ./webpack.dev.js",
         "build": "webpack --config ./webpack.production.js",
         "predeploy" : "npm run build",
-        "deploy" : "gh-pages -d build"
+        "deploy" : "gh-pages -d dist"
     },
     "homepage": "https://raykuonz.github.io/three-js-rocket-game/"
 }
